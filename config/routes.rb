@@ -5,6 +5,10 @@ Rails.application.routes.draw do
   namespace :admin do
      resources :products
    end
+
+
+resources :orders
+
    resources :carts do
       collection do
         delete :clean
