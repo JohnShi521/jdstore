@@ -36,7 +36,7 @@
             </td>
             <td>
               <%= form_for cart_item, url: cart_item_path(cart_item.product_id) do |f| %>
-           <%= f.select :quantity, 10..cart_item.product.quantity %>
+     <%= f.select :quantity, [20,30,40,50,60,70,80,90,100] %>
            <%= f.submit "更新数量", data: { disable_with: "Submiting..." } %>
          <% end %>
             </td>
